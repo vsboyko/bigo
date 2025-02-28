@@ -1101,7 +1101,7 @@ p {
 
 @media (max-width: 767px) {
     html {
-        font-size: .15625vw;
+        font-size: .145vw;
     }
     .faq-card__header-picture--2 {
         margin-top: 130rem;
