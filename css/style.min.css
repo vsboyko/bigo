@@ -1107,4 +1107,14 @@ p {
         margin-top: 130rem;
         margin-right: -15rem;
     }
+    .faq-card__header-title {
+        font-size: var(--fs-4);
+    }
+    .faq-card__header-picture--1 {
+        left: -35rem;
+    }
+    .u-input {
+        min-height: 64rem;
+        font-size: var(--fs-3);
+    }
 }
