@@ -1,6 +1,6 @@
 :root {
     --fs-default: 14rem;
-    --fs-1: 64rem;
+    --fs-1: 56rem;
     --fs-2: 48rem;
     --fs-3: 36rem;
     --fs-4: 32rem;
@@ -803,7 +803,7 @@ p {
 
 .header {
     padding: 5rem 0;
-    border-bottom: 10px solid currentColor;
+    border-bottom: 8rem solid currentColor;
 }
 
 .header__container {
@@ -881,12 +881,17 @@ p {
     line-height: 1;
 }
 
+.step-card__label span {
+    font-size: 60%;
+    opacity: .4;
+}
+
 .intro {
-    padding: 100px 0 50rem;
+    padding: 50rem 0;
 }
 
 .intro__title {
-    margin: 0 0 40px;
+    margin: 0 0 40rem;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
@@ -899,7 +904,7 @@ p {
     line-height: 1;
     color: #00272B;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 10rem;
     text-transform: lowercase;
     vertical-align: top;
 }
@@ -943,10 +948,23 @@ p {
 }
 
 .intro__form-footer {
-    margin: 40rem -59% 0 0;
+    margin: 80rem -59% 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.intro__form-footer:before {
+    background: url('data:image/svg+xml,%3Csvg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M40.782 63.0002C43.8409 152.231 55.1306 233.149 75.3007 305.15C94.8916 375.079 126.547 429.991 175.395 471.969C316.836 593.513 592.417 523.405 592.417 523.405L579.822 421.468L778.092 554.241L618.762 736.665L608.294 651.923C608.294 651.923 335.443 709.433 162.624 543.66C60.2261 445.438 17.7161 282.878 22.3385 65.7967C23.0618 65.03 35.1943 62.9784 40.782 63.0002Z" fill="%23287F77"/%3E%3C/svg%3E%0A') 50% / contain no-repeat;
+    width: 100rem;
+    height: 100rem;
+    margin: -54rem 24rem 0 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(10deg);
 }
 
 .intro__form-footer-btn {
@@ -963,7 +981,8 @@ p {
 }
 
 .faq-card__header {
-    margin: 0 0 50rem;
+    margin: 0 0 40rem;
+    padding-top: 90rem;
     position: relative;
 }
 
@@ -988,9 +1007,8 @@ p {
 }
 
 .faq-card__header-picture--1 {
-    top: 50%;
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
 }
 
 .faq-card__header-picture--2 {
@@ -1006,7 +1024,10 @@ p {
     text-align: center;
 }
 
-.faq-card__content {padding: 0;font-weight: 600;}
+.faq-card__content {
+    padding: 0;
+    font-weight: 600;
+}
 
 .faq-card__content b,
 .faq-card__content strong {
@@ -1028,9 +1049,55 @@ p {
     margin-bottom: 20rem;
 }
 
+.faq-card__faq-info {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16rem;
+    color: #3AA49A;
+    text-transform: lowercase;
+    position: absolute;
+    top: 10rem;
+    left: 94rem;
+    transform: rotate(-16deg);
+}
+
+.faq-card__faq-symbol {
+    font-weight: 900;
+    font-size: 26rem;
+    position: absolute;
+    top: 0;
+    left: 100rem;
+}
+
+.faq-card__faq-symbol span {
+    position: absolute;
+}
+
+.faq-card__faq-symbol span:nth-child(2) {
+    font-size: 80%;
+}
+
+.faq-card__faq-symbol span:nth-child(1) {
+    top: -25rem;
+    left: -40rem;
+    transform: rotate(15deg);
+}
+
+.faq-card__faq-symbol span:nth-child(2) {
+    top: -30rem;
+    left: -14rem;
+    transform: rotate(12deg);
+}
+
+.faq-card__faq-symbol span:nth-child(3) {
+    top: -8rem;
+    left: -18rem;
+    transform: rotate(-20deg);
+}
+
 .faq {
     padding: 80rem 0;
-    border-top: 10px solid currentColor;
+    border-top: 8rem solid currentColor;
 }
 
 .faq__card:not(:last-child) {
@@ -1040,7 +1107,7 @@ p {
 .footer {
     padding: 70rem 0 35rem;
     text-align: center;
-    border-top: 10px solid currentColor;
+    border-top: 8rem solid currentColor;
 }
 
 .footer__help strong,
@@ -1111,7 +1178,7 @@ p {
         font-size: var(--fs-4);
     }
     .faq-card__header-picture--1 {
-        left: -35rem;
+        left: -25rem;
     }
     .u-input {
         min-height: 64rem;
