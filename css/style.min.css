@@ -1098,3 +1098,13 @@ p {
     margin: 20rem auto 0;
     transform: rotate(24deg);
 }
+
+@media (max-width: 767px) {
+    html {
+        font-size: .15625vw;
+    }
+    .faq-card__header-picture--2 {
+        margin-top: 130rem;
+        margin-right: -15rem;
+    }
+}
