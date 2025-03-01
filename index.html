@@ -4,13 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="css/style.min.css?v=993325224222243134634">
+    <style>
+      .u-preloader {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        font-size: 80rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+        pointer-events: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        z-index: 10000;
+      }
+      .u-preloader.is-hide {
+        background: #fff;
+        -webkit-transform: scale(2);
+                transform: scale(2);
+        opacity: 0;
+        visibility: hidden;
+      }
+      .u-preloader__hero {
+        width: 100rem;
+        height: 100rem;
+        margin: -50rem 0 0 -50rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .u-preloader__hero-diamond {
+        position: absolute;
+      }
+      .u-preloader__hero-diamond--1 {
+        font-size: 100%;
+        top: 0;
+        left: -170rem;
+        -webkit-transform: rotate(20deg);
+                transform: rotate(20deg);
+      }
+      .u-preloader__hero-diamond--2 {
+        font-size: 94%;
+        top: 130rem;
+        left: 100rem;
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+      }
+      .u-preloader__hero-diamond--3 {
+        font-size: 74%;
+        top: -150rem;
+        left: -20rem;
+        -webkit-transform: rotate(-40deg);
+                transform: rotate(-40deg);
+      }
+      .u-preloader__hero-diamond--4 {
+        font-size: 86%;
+        top: 50rem;
+        left: 170rem;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      .u-preloader__hero-diamond--5 {
+        font-size: 96%;
+        top: 163rem;
+        left: -50rem;
+        -webkit-transform: rotate(-14deg);
+                transform: rotate(-14deg);
+      }
+      .u-preloader__hero-diamond--6 {
+        font-size: 78%;
+        top: -90rem;
+        left: 110rem;
+        -webkit-transform: rotate(52deg);
+                transform: rotate(52deg);
+      }
+      .u-preloader__hero-img {
+        width: 260rem;
+        margin: -130rem 0 0 -130rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+      }
+      .u-preloader__hero-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const preloader = document.querySelector(".js-preloader");
+        if (preloader) {
+          setTimeout(() => {
+            preloader.classList.add("is-hide");
+          }, 1000);
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="css/style.min.css?v=649871498948440256">
     <title>BIGO bro - алмазы BIGO LIVE в рассрочку</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
   </head>
-  <body">
+  <body>
+    <div class="js-preloader u-preloader">
+      <div class="u-preloader__hero">
+        <span class="u-preloader__hero-diamond u-preloader__hero-diamond--1">💎</span>
+        <span class="u-preloader__hero-diamond u-preloader__hero-diamond--2">💎</span>
+        <span class="u-preloader__hero-diamond u-preloader__hero-diamond--3">💎</span>
+        <span class="u-preloader__hero-diamond u-preloader__hero-diamond--4">💎</span>
+        <span class="u-preloader__hero-diamond u-preloader__hero-diamond--5">💎</span>
+        <span class="u-preloader__hero-diamond u-preloader__hero-diamond--6">💎</span>
+        <picture class="u-preloader__hero-img">
+          <img src="images/hero-1.png" width="1024" height="1024" alt="BIGO Bro">
+        </picture>
+      </div>
+    </div>
     <div id="root" class="site">
       <div class="site__inner">
         <!-- header BEGIN -->
@@ -43,7 +158,7 @@
                     <input type="text" name="bigo_id" id="bigo_id" required class="u-input u-input--mw-1 step-card__input" placeholder="292778489">
                   </div>
                   <div class="step-card intro__form-step-card">
-                    <label for="bigo_amount" class="step-card__label">введите количество 💎,<br>которое Вам нужно:<br><span>минимум 1500</span></label>
+                    <label for="bigo_amount" class="step-card__label">введите количество 💎,<br>которое Вам нужно:<br><span>минимум 1500 <span>💎</span></span></label>
                     <input type="text" name="bigo_amount" id="bigo_amount" required class="u-input u-input--mw-2 step-card__input" placeholder="2000">
                   </div>
                   <div class="step-card intro__form-step-card">
