@@ -865,11 +865,12 @@ p {
 }
 
 .intro__title span:not(.color-accent) {
-    background: #00FDF4;
+    background: #287F77;
     padding: 4rem 13rem 6rem;
+    font-weight: 600;
     font-size: 50%;
     line-height: 1;
-    color: #00272B;
+    color: #fff;
     display: inline-block;
     border-radius: 10rem;
     text-transform: lowercase;
